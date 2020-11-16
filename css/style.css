@@ -237,11 +237,8 @@ b {
 /* -------------------------- end -----------------*/
 
 @media (max-width: 1000px) and (min-width: 290px){
-    *{
-        padding: 0;
-        margin: 0;
-    }
     header{
+        height: 400px;  
         align-items: start;
         justify-content: space-between;
         padding-left: 5vw;
@@ -256,10 +253,10 @@ b {
     .btn-gamburger{
         display: block;
     }
-    .navigate-all{
-        display: none;
-    }
     .logotip>img{
         width: 20vw;
+    }
+    ul.navigate-all{
+        display: none;
     }
 }
