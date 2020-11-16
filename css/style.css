@@ -69,25 +69,51 @@ li.navigate {
 
 /* -------------------------------------end============--------------- */
 
+#gor-blud{
+    grid-area: gor-blud;
+}
+
+#gornir{
+    grid-area: gornir;
+}
+
+#soup{
+    grid-area: soup;
+}
+#salat{
+    grid-area: salat;
+}
+
+main.main-menu{
+    display: grid;
+    grid-template-areas:
+    "gor-blud . gornir"
+    "gor-blud . soup"
+    "gor-blud . salat";
+}
 
 .container {
     width: 85%;
     margin: 0 auto;
 }
 
+
 .wrapper {
-    display: grid;
+    /* display: grid;
     grid-template-columns:  1fr 1fr;
     grid-template-areas: 
-    "name content";
-    width: 80%;
-}
+    "name-blud cost";
+    width: 80%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-.name-gor {
-    grid-area: name;
-  }
+}
+.name-gor{
+    grid-area: name-blud;
+}
 .cost {
-    grid-area: content;
+    grid-area: cost;
 }
 
 

@@ -9,6 +9,13 @@
 <body>
     <header>
         <div class="bot-header">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <svg viewBox="0 0 100 80" width="40" height="40">
+                    <rect width="100" height="20" rx="8"></rect>
+                    <rect y="30" width="100" height="20" rx="8"></rect>
+                    <rect y="60" width="100" height="20" rx="8"></rect>
+                </svg>
+            </a>
             <ul class="navigate-all">
                 <li class="navigate"><a href="#" id="menu">главаная</a></li> 
                 <li class="navigate"><a href="#" id="menu">меню</a></li>  
@@ -22,14 +29,15 @@
     </header> 
 
     
-                <div class="container"> 
-
-                        <section id="gor-blud">           
+    <div class="container">
+        <main class="main-menu">
+        <section id="gor-blud">           
                                 <div class="title-menu">
                                     Горячие блюда
-                                </div>
-                                
-                                <div class="wrapper">    <div class="name-gor">Жульен с курицей и грибами</div> <div class="cost">₽ 110</div></div>
+                                </div> 
+                                <div class="wrapper">
+                                    <div class="name-gor">Жульен с курицей и грибами</div> 
+                                <div class="cost">₽ 110</div></div>
                                     
                                 <div class="wrapper">    <div class="name-gor">Поджарка из говядины с овощами</div>  <div class="cost">₽ 120</div></div>
 
@@ -82,8 +90,6 @@
                                 <div class="title-menu">
                                     Гарниры
                                 </div>
-
-                                
                                 <div class="wrapper">   <div class="name-gor">Картофельное пюре </div><div class="cost">₽ 35</div></div>
 
                                 <div class="wrapper">    <div class="name-gor">Рис </div><div class="cost">₽ 35</div></div>
@@ -139,9 +145,8 @@
 
                             <div class="wrapper">   <div class="name-gor">Винегрет</div> <div class="cost">₽ 50</div></div>
                         </section>
-                </div>
-                
-                
+            </main>
+        </div>
                 
 
                 <section id="pomin">
@@ -175,11 +180,12 @@
 
                         </div>
                     </div>
+
                 </section>
     <footer>
-            <section id="footer">
-                
-            </section>
-    </footer>            
+           
+    </footer>      
+    
+    <script src="js/main.js"></script>
 </body>
 </html>
