@@ -1,24 +1,18 @@
-*{ 
-    margin: 0; 
-    padding: 0; 
-    box-sizing: border-box; 
-}
-@font-face{ 
-    font-family: "Lobster-Regular"; 
-    src:url(../fonts/Lobster-Regular.ttf) format("truetype"); 
-} 
-@font-face{ 
-    font-family: "title-fonts"; 
-    src:url(../fonts/title-fonts.ttf) format("truetype"); 
-} 
-A:link { 
-        text-decoration: none; /* Убирает подчеркивание для ссылок */
+@import 'settings.css';
+
+
+body{
+    background: var(--main-background);
 }
 
-A {
+li.navigate>a:link { 
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+li.navigate>a {
     color: black;
 }
-a:after {
+li.navigate>a:after {
     /* background-color: orange; */
     display: block;
     content: "";
@@ -29,55 +23,49 @@ a:after {
     -moz--transition: width .3s ease-in-out;
     transition: width .3s ease-in-out;
 }
-a:hover:after,
-a:focus:after {
+li.navigate>a:hover:after,
+li.navigate>a:focus:after {
     width: 100%;
 }
 
-
-
-
-
 /* -------------------------- end -------------------- */
-
-
-
-.container-header {
-    background-color: rgb(245,249,249);
-    margin: 0 auto;
-}
-.all-header {
+header {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5vw;
 }
 header {    
-    width: 90%;
-    height: 750px;
+    width: 100%;
+    height: 1000px;
     background-image: url(https://s1.1zoom.ru/big0/709/Soups_Cabbage_White_background_591978_1280x853.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /*pallax scrolling effect*/
 }
-.bot-header {
-    position: absolute;
+.bot-header, ul.navigate-all {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.navigate-all {
-    position: absolute;
+ul.navigate-all {
+    width: 15vw;
     text-align: center;
     list-style-type: none;
     text-transform: uppercase;
     text-decoration: none;
     cursor: pointer;
     line-height: 1;
-    display: inline-block;
     font-size: 30px;
-    margin-left: 900px;
-    margin-top: 200px;
-}
-.logotip {
-    margin-left: 875px;
-    margin-top: 400px;
-}
-.navigate {
-    padding: 5px;
 }
 
+li.navigate {
+    padding: 5px;
+}
+.logotip>img{
+    width: 300px;
+}
 
 /* -------------------------------------end============--------------- */
 
@@ -133,7 +121,10 @@ header {
     text-align: center;
 }
 
-
+.not-logotip>img{
+    width: 100%;
+    height: 100%;
+}
 
 .left-side {
     display: grid;
