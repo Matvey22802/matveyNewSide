@@ -1,6 +1,7 @@
 @import 'settings.css';
 
 
+
 body{
     background: var(--main-background);
 }
@@ -48,6 +49,9 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+.btn-gamburger{
+    display: none;
 }
 ul.navigate-all {
     width: 15vw;
@@ -231,3 +235,31 @@ b {
     height: calc(100% + 10px);
   }
 /* -------------------------- end -----------------*/
+
+@media (max-width: 1000px) and (min-width: 290px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        align-items: start;
+        justify-content: space-between;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .bot-header{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .btn-gamburger{
+        display: block;
+    }
+    .navigate-all{
+        display: none;
+    }
+    .logotip>img{
+        width: 20vw;
+    }
+}
